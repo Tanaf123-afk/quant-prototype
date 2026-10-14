@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Quant interview preparation through focused problem solving." />
+  <title>quant. · interview practice</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header page">
+    <a class="brand" href="#top" aria-label="quant home">
+      <span class="brand-mark">q</span>
+      <span class="brand-word">quant<span>.</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#paths">Paths</a>
+      <a href="#about">How it works</a>
+    </nav>
+    <div class="header-actions">
+      <button class="sign-in" type="button">Sign in</button>
+      <button class="header-cta" id="header-start" type="button">Start free <span>↗</span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero page">
+      <div class="hero-copy-column">
+        <p class="eyebrow"><span></span> LEARN · PRACTISE · PREPARE</p>
+        <h1>Get ready for<br>quant interviews<br><em>properly.</em></h1>
+        <h2>Pick your role. Learn the right skills. Practise hard questions.</h2>
+        <p class="hero-copy">A structured path through the maths, probability, statistics, coding and market reasoning used across quant interviews.</p>
+
+        <div class="path-picker">
+          <label for="track-select">Choose your path</label>
+          <select id="track-select" class="track-select" aria-label="Choose quant career path">
+            <option value="trader">Quant Trader</option>
+            <option value="researcher">Quant Researcher</option>
+            <option value="developer">Quant Developer</option>
+          </select>
+          <p class="track-description" id="track-description"></p>
+        </div>
+
+        <button class="primary-cta" id="start-button" type="button">Start practising <span>→</span></button>
+
+        <div class="promise-card">
+          <div class="promise-icon">✓</div>
+          <div>
+            <strong>Role-specific preparation</strong>
+            <span>Follow a clear curriculum instead of jumping between random resources.</span>
+          </div>
+          <span class="promise-arrow">↗</span>
+        </div>
+      </div>
+
+      <div class="question-shell" id="practice">
+        <article class="question-card" aria-labelledby="question-text">
+          <div class="question-card-head">
+            <span>TRY QUANT QUESTIONS</span>
+            <span>No account needed</span>
+          </div>
+          <div class="question-card-body">
+            <div class="question-meta">
+              <span><strong id="question-topic">Probability</strong> · <span id="question-difficulty">Hard</span></span>
+              <span id="progress-text">01 / 08</span>
+            </div>
+            <h3 id="question-text"></h3>
+            <p class="question-note" id="question-note"></p>
+            <p class="answer-label">Choose an answer</p>
+            <div class="answers" id="answers"></div>
+            <p class="micro-copy">Have a go. A hint is here if you need one.</p>
+            <button class="hint-button" id="hint-button" type="button">Show me a hint <span>+</span></button>
+            <div class="hint" id="hint" hidden></div>
+            <button class="check-button" id="check-button" type="button" disabled>Check answer</button>
+            <div class="feedback" id="feedback" hidden>
+              <p class="feedback-title" id="feedback-title"></p>
+              <div id="explanation"></div>
+              <button class="next-button" id="next-button" type="button">Next question <span>→</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="focus-strip page" aria-label="Quant preparation areas">
+      <span>THREE ROLE-SPECIFIC PATHS</span>
+      <div>
+        <span>Quant Trader</span><i>•</i><span>Quant Researcher</span><i>•</i><span>Quant Developer</span>
+      </div>
+    </section>
+
+    <section class="university-section" aria-labelledby="university-heading">
+      <div class="page university-title-row">
+        <span></span>
+        <h2 id="university-heading">Built for ambitious students aiming for quant</h2>
+        <span></span>
+      </div>
+      <div class="logo-marquee" aria-label="University marks">
+        <div class="logo-track">
+          <div class="uni-logo oxford"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/University_of_Oxford.svg" alt="University of Oxford" /></div>
+          <div class="uni-logo cambridge"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/University_of_Cambridge_logo.png" alt="University of Cambridge" /></div>
+          <div class="uni-logo imperial"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Imperial_logo.svg" alt="Imperial College London" /></div>
+          <div class="uni-logo lse-wide"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/London_school_of_economics_logo_with_name.svg" alt="London School of Economics" /></div>
+          <div class="uni-logo crest"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Shield_of_the_University_of_Warwick.svg" alt="University of Warwick" /></div>
+          <div class="uni-logo crest"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coat_of_Arms_of_the_University_of_Bath.svg" alt="University of Bath" /></div>
+          <div class="uni-logo crest"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Shield_of_the_University_of_Bristol.svg" alt="University of Bristol" /></div>
+
+          <div class="uni-logo oxford" aria-hidden="true"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/University_of_Oxford.svg" alt="" /></div>
+          <div class="uni-logo cambridge" aria-hidden="true"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/University_of_Cambridge_logo.png" alt="" /></div>
+          <div class="uni-logo imperial" aria-hidden="true"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Imperial_logo.svg" alt="" /></div>
+          <div class="uni-logo lse-wide" aria-hidden="true"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/London_school_of_economics_logo_with_name.svg" alt="" /></div>
+          <div class="uni-logo crest" aria-hidden="true"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Shield_of_the_University_of_Warwick.svg" alt="" /></div>
+          <div class="uni-logo crest" aria-hidden="true"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Coat_of_Arms_of_the_University_of_Bath.svg" alt="" /></div>
+          <div class="uni-logo crest" aria-hidden="true"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Shield_of_the_University_of_Bristol.svg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="paths page" id="paths">
+      <p class="section-kicker">THREE PATHS</p>
+      <div class="section-heading-row">
+        <h2>Choose the job you are preparing for.</h2>
+        <p>Start broad. Once you enter a path, the full curriculum opens category by category.</p>
+      </div>
+      <div class="path-grid compact-paths">
+        <button class="path-card" data-track="trader" type="button">
+          <span class="path-number">01</span>
+          <strong>Quant Trader</strong>
+          <p class="path-summary">Probability · Logic · Strategy · Markets</p>
+          <span class="path-link">View curriculum ↗</span>
+        </button>
+        <button class="path-card" data-track="researcher" type="button">
+          <span class="path-number">02</span>
+          <strong>Quant Researcher</strong>
+          <p class="path-summary">Statistics · Maths · ML · Research</p>
+          <span class="path-link">View curriculum ↗</span>
+        </button>
+        <button class="path-card" data-track="developer" type="button">
+          <span class="path-number">03</span>
+          <strong>Quant Developer</strong>
+          <p class="path-summary">Coding · Algorithms · Systems · Performance</p>
+          <span class="path-link">View curriculum ↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="page about-inner">
+        <p class="section-kicker">HOW IT WORKS</p>
+        <h2>Question first.<br>Theory when you need it.</h2>
+        <p>Choose a role, open a category, then practise one focused subtopic at a time. Worked explanations are short and practical, so the site stays a training tool rather than becoming a textbook.</p>
+        <div class="simple-steps">
+          <div><strong>01</strong><span>Choose your role</span></div>
+          <div><strong>02</strong><span>Open a category</span></div>
+          <div><strong>03</strong><span>Practise a subtopic</span></div>
+          <div><strong>04</strong><span>Move up in difficulty</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page footer">
+    <span class="brand-word">quant<span>.</span></span>
+    <span>Prototype · 2026</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
