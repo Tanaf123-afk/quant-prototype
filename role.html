@@ -1,86 +1,16 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Structured quant interview preparation." />
-  <title>quant.</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body data-role="" class="role-page-body">
-  <header class="site-header page">
-    <button class="brand brand-button" data-home type="button" aria-label="quant home">
-      <span class="brand-mark">q</span>
-      <span class="brand-word">quant<span>.</span></span>
-    </button>
-    <nav class="main-nav" aria-label="Primary navigation">
-      <a href="#curriculum">Curriculum</a>
-      <a href="practice.html">Practice</a>
-    </nav>
-    <div class="header-actions">
-      <select class="mini-role-select" id="role-select" aria-label="Change quant path">
-        <option value="trader">Quant Trader</option>
-        <option value="researcher">Quant Researcher</option>
-        <option value="developer">Quant Developer</option>
-      </select>
-    </div>
-  </header>
-
-  <main>
-    <section class="role-hero page">
-      <button class="back-link" data-home type="button">← All paths</button>
-      <p class="eyebrow"><span></span> STRUCTURED INTERVIEW PREP</p>
-      <div class="role-hero-grid">
-        <div>
-          <h1 id="role-title"></h1>
-          <p class="role-short" id="role-short"></p>
-        </div>
-        <div class="role-intro-wrap">
-          <p id="role-intro"></p>
-          <p class="role-bank-stat" id="bank-stat"></p>
-          <div class="role-actions">
-            <button class="primary-cta compact" id="start-first" type="button">View curriculum <span>↓</span></button>
-            <button class="outline-cta compact-outline" id="shuffle-all" type="button">Shuffle questions <span>↗</span></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="curriculum-shell page" id="curriculum">
-      <div class="curriculum-heading">
-        <div>
-          <p class="section-kicker">CURRICULUM MAP</p>
-          <h2>One path. Clear categories.</h2>
-          <p>Open a category to see its subtopics, then jump straight into a shuffled question deck.</p>
-        </div>
-        <div class="curriculum-count">Question-first</div>
-      </div>
-      <div class="curriculum-map" id="curriculum-map"></div>
-    </section>
-  </main>
-
-  <footer class="page footer">
-    <span class="brand-word">quant<span>.</span></span>
-    <span>Prototype · 2026</span>
-  </footer>
-
-  <script src="curricula.js"></script>
-  <script src="questions/bank-01.js"></script>
-  <script src="questions/bank-02.js"></script>
-  <script src="questions/bank-03.js"></script>
-  <script src="questions/bank-04.js"></script>
-  <script src="questions/bank-05.js"></script>
-  <script src="questions/bank-06.js"></script>
-  <script src="questions/bank-07.js"></script>
-  <script src="questions/bank-08.js"></script>
-  <script src="questions/bank-09.js"></script>
-  <script src="questions/bank-10.js"></script>
-  <script src="questions/bank-11.js"></script>
-  <script src="questions/bank-12.js"></script>
-  <script src="questions/bank-13.js"></script>
-  <script src="questions/bank-14.js"></script>
-  <script src="questions/bank-15.js"></script>
-  <script src="questions/bank-16.js"></script>
-  <script src="role-page.js"></script>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Structured quant interview preparation."><title>quant. curriculum</title><link rel="stylesheet" href="styles.css"></head>
+<body class="role-page-body">
+<header class="site-header page">
+<button class="brand" data-home type="button"><span class="brand-mark">q</span><span class="brand-word">quant<span>.</span></span></button>
+<nav class="main-nav"><a href="#curriculum">Curriculum</a><a id="practice-link" href="practice.html">Practice</a></nav>
+<div class="header-actions"><select class="mini-role-select" id="role-select"><option value="trader">Quant Trader</option><option value="researcher">Quant Researcher</option><option value="developer">Quant Developer</option></select></div>
+</header>
+<main>
+<section class="role-hero page"><button class="back-link" data-home type="button">← All paths</button><p class="eyebrow"><span></span> STRUCTURED INTERVIEW PREP</p><div class="role-hero-grid"><div><h1 id="role-title"></h1><p class="role-short" id="role-short"></p></div><div class="role-intro-wrap"><p id="role-intro"></p><p class="role-bank-stat" id="bank-stat"></p><div class="role-actions"><button class="primary-cta" id="start-first" type="button">View curriculum <span>↓</span></button><button class="outline-cta" id="shuffle-all" type="button">Shuffle questions ↗</button></div></div></div></section>
+<section class="curriculum-shell page" id="curriculum"><div class="curriculum-heading"><div><p class="section-kicker">CURRICULUM MAP</p><h2>One path. Clear categories.</h2><p>Open a category to see its subtopics, then jump into a shuffled question deck.</p></div><div class="curriculum-count">Question-first</div></div><div class="curriculum-map" id="curriculum-map"></div></section>
+</main>
+<footer class="page footer"><span class="brand-word">quant<span>.</span></span><span>Prototype · 2026</span></footer>
+<script src="curricula.js"></script><script src="problem-bank.js"></script><script src="role-page.js"></script>
+</body></html>
